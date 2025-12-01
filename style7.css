@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+h1 {
+  background-color: #080b36;
+  padding: 20px;
+  position: relative; /* Add position relative */
+}
+
+img {
+   width: 250px;
+}
+
+.boton-redireccion{
+    background-color: #080b36;
+    color: white;
+    padding: 15px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 18px;
+    text-decoration: none;
+
+}
+.boton-redireccion:hover{
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+h2 {
+  background-color: #ffffffd9; /* Slightly more opaque */
+  text-align: center;
+  font-size: 30px; /* Increased font size */
+  color: #333; /* Darker text color */
+  padding: 25px; /* Adjusted padding */
+  margin-bottom: 20px; /* Added margin */
+  border-radius: 8px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Added letter spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.capa {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Slightly less opaque */
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* Estilos para el encabezado */
+h1.header{
+  width: 100%;
+  height: 80px; /* Reduced height */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(8, 11, 54, 0.9); /* Slightly more opaque */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container .btn-menu,
+.container .btn-menu label {
+  color: #fff;
+  font-size: 22px; /* Slightly reduced size */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.container .btn-menu label:hover {
+  color: #ddd; /* Lighter on hover */
+}
+
+.container .menu {
+  float: right;
+  line-height: 80px; /* Adjusted line height */
+}
+
+.container .menu a {
+  display: inline-block;
+  padding: 12px 16px; /* Adjusted padding */
+  line-height: normal;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 14px; /* Adjusted font size */
+  margin-right: 6px; /* Adjusted margin */
+  border-radius: 6px; /* Rounded corners */
+}
+
+.container .menu a:hover {
+  border-bottom: 2px solid #ddd; /* Lighter on hover */
+  padding-bottom: 4px; /* Adjusted padding */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+}
+
+/* Fin de Estilos para el encabezado */
+
+/* Menù lateral */
+#btn-menu {
+  display: none;
+}
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #333; /* Darker background */
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 15px; /* Adjusted padding */
+  color: white;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+  font-size: 14px; /* Adjusted font size */
+}
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #ddd; /* Lighter border on hover */
+  background: #444; /* Slightly darker background */
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contenedor {
+  width: 80%; /* Reduced width */
+  max-width: 800px; /* Added max-width */
+  margin: 20px auto; /* Centered and added margin */
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center; /* Center content */
+}
+
+.contenedor h3 {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 20px; /* Increased font size */
+  color: #333; /* Darker text color */
+  border-bottom: 1px solid #ddd; /* Added border */
+  padding-bottom: 10px; /* Added padding */
+}
+
+.contenedor p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-top: 15px;
+  letter-spacing: 0.5px; /* Reduced letter spacing */
+  line-height: 1.6; /* Improved line height */
+  color: #555; /* Slightly darker text color */
+}
+
+.imagen {
+  width: 100%; /* Make responsive */
+  max-width: 350px; /* Set maximum width */
+  height: auto;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 15px; /* Added margin */
+}
+
+.imagen {
+  float: none; /* Remove float */
+  display: block; /* Make block-level */
+  margin: 0 auto 15px; /* Center horizontally */
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html lang="es-Es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>Chat Simple</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="contenedor"> 
-    <h1>Bienvenido a tu pagina de confianza</h1>
-    <p>Lugar calido para tu lectura</p>
-    <p>encuentras informacion de tu interes</p>
-     <a href="inicio.html" class="boton-redireccion">Haz click aqui</a>
-   </div> 
+    <h1><img src="logo.webp" alt="Logo"></h1>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a href="inicio.html" class="boton-redireccion">Regresar</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chat en Vivo</h2>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Los mensajes aparecerán aquí -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Escribe tu mensaje...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
 </body>
 </html>

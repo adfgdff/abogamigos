@@ -1,6 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Enlace a Font Awesome -->
@@ -8,55 +8,66 @@
     <meta charset="UTF-8" />
     <title>pricipal</title>
     <link rel="stylesheet" href="style1.css" />
-  </head>
-  <body>
-    
-   
-     <header class="header">
-      <div class="container">
-        <div class="btn-menu">
-          <label for="btn-menu">☰</label>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1><img src="logo.webp" alt="Mundo Legal"></h1>
+            </div>
+            <nav class="menu">
+                <a href="pagina1.html">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="index.html">Chat</a>
+                <a href="https://wa.me/qr/GEI7XM6QPGKUK1" target="_blank" style="text-decoration: none;">
+                    <i class="fab fa-whatsapp" style="font-size: 40px; color: #25D366;"></i>
+                </a>
+                <a href="login.html" class="boton-redireccion">Regresar</a>
+            </nav>
         </div>
-        <div class="logo">
-         <h1><img src="logo.webp"></h1>
+    </header>
+    <div class="capa"></div>
+
+    <!-- Menú Lateral -->
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                
+                <a href="servicios.html">Servicios</a>
+                <a href="portafolio.html">Portafolio</a>
+                <a href="biblioteca.html">Biblioteca</a>
+                <a href="#">Suscribirse</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
         </div>
-         <nav class="menu">
-          <a href="#">Inicio</a>
-          <a href="#">Nosotros</a>
-          <a href="#">Blog</a>
-          <a href="https://wa.me/qr/GEI7XM6QPGKUK1" target="_blank" style="text-decoration: none;">
-         <i class="fab fa-whatsapp" style="font-size: 40px; color: #25D366;"></i></a>
-         <a href="index.html" class="boton-redireccion">Regresar</a>
-        </nav>
-      </div>
-     </header>
-     <div class="capa"></div>
-     <!--	--------------->
-     <input type="checkbox" id="btn-menu" />
-     <div class="container-menu">
-       <div class="cont-menu">
-        <nav>
-          <a href="#">Portafolio</a>
-          <a href="#">Servicios</a>
-          <a href="#">Suscribirse</a>
-          <a href="#">Facebook</a>
-          <a href="#">Youtube</a>
-          <a href="#">Instagram</a>
-        </nav>
-        <label for="btn-menu">✖️</label>
-      </div>
     </div>
-        
-        <div class="content">
-     <h1>Somos una empresa </h1><br><br>
-     <p class="par">Dedicada a cubrir de las Necesidades de los usuarios<br>
-     que visitan nuestra pagina de su interes este tipo de contenido<br>
-     es relacionado a: Estudiantes de Derecho,Abogados,Ciudadanos que buscan<br>
-     saber de algun tema relacionado a su interes.....<br>
-     !!!Bienvenido¡¡¡
-     </p>
-     <p><img src="abogado.jpg"></p>
-     </div>
-       
-  </body>
+
+    <!-- Contenido Principal -->
+    <main class="content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Somos una empresa dedicada a brindar soluciones legales integrales</h1>
+                <p class="par">
+                    En Mundo Legal, nos apasiona cubrir las necesidades de nuestros usuarios. Ofrecemos contenido de valor para estudiantes de Derecho, abogados y ciudadanos que buscan información legal precisa y accesible.
+                    <br><br>
+                    Nuestro compromiso es proporcionar recursos confiables y herramientas útiles para navegar el complejo mundo del derecho. Desde asesoramiento básico hasta análisis especializados, ¡estamos aquí para ayudarte!
+                    <br><br>
+                    ¡Bienvenido a un espacio donde el conocimiento legal se encuentra al alcance de tu mano!
+                </p>
+                <a href="servicios.html" class="cta-button">Descubre nuestros servicios</a>
+            </div>
+            <div class="hero-image">
+                <img src="abogado.jpg" alt="Imagen de un abogado o concepto legal">
+            </div>
+        </section>
+    </main>
+
+</body>
 </html>

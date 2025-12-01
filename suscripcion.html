@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción - Biblioteca Digital</title>
+    <link rel="stylesheet" href="suscripcion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Mi Biblioteca Digital</h1>
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="subscription-form">
+            <h2>Suscríbete ahora</h2>
+            <p>Accede a nuestra biblioteca de pago por una pequeña cuota mensual.</p>
+            <form id="subscriptionForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="submit-button">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Biblioteca Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('¡Gracias por suscribirte a nuestra biblioteca de pago!');
+            // Aquí puedes añadir la lógica para redirigir a la página de inicio de sesión
+            // window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

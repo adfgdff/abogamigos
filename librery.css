@@ -1,0 +1,301 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1.img{
+   width: 450px;
+   height: 150px;
+}
+.h2{
+    font-size: 14px;
+}
+/* Estilos para el cartel de actualización */
+.update-banner {
+    background-color: #c8e6c9; /* Verde suave */
+    color: #388e3c; /* Verde oscuro */
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.update-banner h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+/* Estilos generales */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+img {
+   width: 150px;
+}
+
+/* Header */
+header {
+    background-color: #080b36;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Book Item */
+.book-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-cover {
+    height: 200px;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.book-details {
+    padding: 1.5rem;
+}
+
+.book-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.book-author {
+    margin: 0 0 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+.book-description {
+    color: #555;
+    line-height: 1.4;
+}
+
+.book-download {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-download:hover {
+    background-color: black;
+}
+
+.book-download.paid {
+    background-color: #d9534f;
+}
+
+.book-download.paid:hover {
+    background-color: #c9302c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+/* Estilos adicionales para mejorar la apariencia */
+body {
+    background-color: #f4f4f4; /* Un gris claro */
+    color: #333; /* Color de texto principal */
+}
+
+header {
+    background-color: #080b36; /* Un azul oscuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.book-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-cover {
+    height: 250px;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.book-item:hover .book-cover img {
+    transform: scale(1.1);
+}
+
+.book-details {
+    padding: 20px;
+}
+
+.book-title {
+    margin: 0 0 10px;
+    font-size: 1.6em;
+    color: #2d3e50;
+}
+
+.book-author {
+    margin: 0 0 15px;
+    font-style: italic;
+    color: #777;
+}
+
+.book-description {
+    color: #555;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.book-download {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: rgba(0, 0, 0, 0.726);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-download:hover {
+    background-color: black;
+}
+
+.book-download.paid {
+    background-color: #f44336;
+}
+
+.book-download.paid:hover {
+    background-color: #d32f2f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #080b36;
+    color: #fff;
+    margin-top: 30px;
+}
+.subscription-section{
+    background-color: #878e9698; 
+    color: #10115cde; 
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.subscription-section h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
